@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+
+
+    var FizzBuzzOutput = '';
+    var fizz = 0;
+    var buzz = 0;
+    var fizzbuzz=0;
+
+
+
+    for ( var i=1; i < 100; i++ ) {
+
+
+        if (i % 15 == 0){
+            fizzbuzz+=1;                
+            FizzBuzzOutput += "FizsBuzz, ";
+        }
+
+        else if ( i % 3 == 0 ){
+            fizz+=1;
+            FizzBuzzOutput += "Fizz, ";
+        }
+
+
+        else if (i % 5 == 0){
+            buzz+=1;
+            FizzBuzzOutput += "Buzz, "
+        }       
+        else {
+
+            FizzBuzzOutput += i + ', ';
+        }
+        console.log(FizzBuzzOutput);
+    }
+ console.log('fizz count= '+ fizz);
+ console.log('buzz count= '+ buzz);
+ console.log('fizzbuzz count= '+ fizzbuzz);
+
+        </script>
+
+    </head>
+    <body> </body>
+</html>
